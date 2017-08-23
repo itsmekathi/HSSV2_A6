@@ -3,7 +3,6 @@
 #define OK 1
 #define NOTOK 2
 #define TIMEOUT 3
-#define RST 2
 
 
 #define log(msg) Serial.print(msg)
@@ -16,7 +15,7 @@ SoftwareSerial A6board (5,6);
 
 char KATHI_PHNO[] =   "+919738460098";
 char AMMA_PHNO[]  =   "+918197429387";
-char SMS_TEXT[]   =   "GSM test message!";
+//char SMS_TEXT[]   =   "GSM test message!";
 
 char end_c[2];
 

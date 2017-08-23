@@ -34,18 +34,11 @@ void setup() {
   end_c[1] = '\0';
   Serial.println("Start");
 
-  pinMode(RST, OUTPUT);
-  digitalWrite(RST, HIGH);
-  delay(5000);
-  digitalWrite(RST, LOW);
-  delay(500);
   if (A6begin() != OK) {
     Serial.println("Error");
     while (1 == 1);
   }
   SerialPrintFromPROGMEM(GSM_STARTUP_SUCCESSFULL);
-  
-
   
 
    // If there was any data sent of serial port enter programming mode
